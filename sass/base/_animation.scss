@@ -1,0 +1,43 @@
+/* параметры анимации заголовка на главной */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: translateX(1rem);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* параметры анимации для подзаголовка на главной */
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: translateX(-1rem);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

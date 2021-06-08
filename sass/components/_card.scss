@@ -1,0 +1,90 @@
+.card {
+    // background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    height: 55rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+    &__picture {
+        background-size: cover;
+        height: 20rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+        &--1 {
+            // background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark), url(../img/nat-4.jpg);
+            background-image: url(../img/nat-4.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/nat-7.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-black;
+        position: absolute;
+        top: 14rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-white, .8),
+                rgba($color-white, .8));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-white, .8),
+                rgba($color-white, .8));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-white, .8),
+                rgba($color-white, .8));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.3rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                color: black;
+
+                &:not(:last-child) {
+                    border-bottom: 2px solid rgb(7, 7, 7);
+                }
+            }
+        }
+    }
+
+}

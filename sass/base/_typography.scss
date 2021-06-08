@@ -1,0 +1,68 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	/* font-size: 16px; */
+	line-height: 1.7;
+	color: $color-grey-dark;
+	padding: 2rem;
+}
+
+.heading-primary {
+	color: $color-white;
+	text-transform: uppercase;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 500;
+        letter-spacing: 4.2rem;
+        margin-left: 2%;
+
+        /* анимация заголовка */
+        animation: moveInLeft 2s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 1.5rem;
+
+        animation: moveInRight 2s ease-out;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+
+    // Окрашиваем заголовок гарадиентом
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: $color-primary-light, $color-primary-dark;
+    color: transparent;
+    text-shadow: .5rem .5rem 1rem rgba($color-black, .3);
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    padding: 0 1.5rem 0 1.5rem;
+
+    // all element witout last
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 2rem;
+    background-color: $color-grey-dark;
+    padding: 4rem 3rem;
+    font-size: 1.4rem;
+
+
+    // &__navigation {
+
+    // }
+
+    &__list {
+        list-style: none;
+    }
+
+    // &__item {
+
+    // }
+
+    &__link {
+        color: antiquewhite;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover,
+        &:active {
+            color: $color-primary-dark-1;
+            // box-shadow: 0 1rem 1rem rgba($color: $color-white, $alpha: .8);
+        }
+    }
+
+
+    &__text {
+        color: antiquewhite;
+    }
+}

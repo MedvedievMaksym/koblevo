@@ -4,10 +4,75 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, $alpha: 1.0);
-    z-index: 9;
+    background-color: rgba($color-black, .8);
+    z-index: 999;
+    // display: none;
 
     &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include absCenter;
+        width: 75%;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 33%;
+        margin: 0;
+        padding: 1rem;
+        background: rgba($color-primary, .6);
+        border-radius: 3px;
+
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 66%;
+        margin: 2rem 2rem;
+
+        h2 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid #000;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 2rem;
+        -moz-column-rule: 1px solid #000;
+
+
+        //перенос слов
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -o-hyphens: auto;
+        -ms-hyphens: auto;
 
     }
 }
